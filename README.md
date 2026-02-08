@@ -18,21 +18,10 @@ als Webpfad ausliefert oder nicht.
 
 ## Installation
 
-### 1. Modul anlegen
-
-MagicMirror/modules/MMM-ImageReload/
-├─ MMM-ImageReload.js
-├─ node_helper.js
-├─ MMM-ImageReload.css
-└─ README.md
-
-### 2. Abhängigkeit installieren (axios)
-
-cd ~/MagicMirror/modules/MMM-ImageReload
-npm init -y
+git clone https://github.com/ottopaulsen/MMM-ImageReload
+cd MMM-ImageReload
+npm init -y >/dev/null 2>&1
 npm install axios
-
-### 3. MagicMirror neu starten
 
 pm2 restart MagicMirror
 
@@ -47,7 +36,7 @@ Wenn die Datei z. B. hier liegt:
 /home/user/MagicMirror/public/example.png
 
 Dann:
-
+```
 {
   module: "MMM-ImageReload",
   position: "middle_center",
@@ -58,9 +47,9 @@ Dann:
     height: "auto"
   }
 }
-
+```
 ### Beispiel: Remote-URL
-
+```
 {
   module: "MMM-ImageReload",
   position: "top_left",
@@ -71,7 +60,7 @@ Dann:
     height: "auto"
   }
 }
-
+```
 ---
 
 ## Konfigurationsoptionen
@@ -129,7 +118,7 @@ MagicMirror-User Leserechte hat.
 
 Beispiel (vorsichtig verwenden):
 
-chmod -R a+rX /home/user/MagicMirror/public/lernsax
+chmod -R a+rX /home/user/MagicMirror/public
 
 ---
 
