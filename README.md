@@ -44,7 +44,7 @@ pm2 restart MagicMirror
 
 Wenn die Datei z. B. hier liegt:
 
-/home/traabe/MagicMirror/public/example.png
+/home/user/MagicMirror/public/example.png
 
 Dann:
 
@@ -129,7 +129,7 @@ MagicMirror-User Leserechte hat.
 
 Beispiel (vorsichtig verwenden):
 
-chmod -R a+rX /home/traabe/MagicMirror/public/lernsax
+chmod -R a+rX /home/user/MagicMirror/public/lernsax
 
 ---
 
